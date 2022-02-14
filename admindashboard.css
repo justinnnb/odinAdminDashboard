@@ -1,13 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 2vh;
+    font-size: 24px;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 8fr;
 }
 
 .logo {
@@ -19,9 +18,37 @@
     grid-area: 1 / 1 / 9 / 2;
     background-color: #a1c7db;
     justify-items: center;
+    color: white;
+    font-size: 2em;
 }
 
 .menu ul, .menu li {
     list-style: none;
     margin: 24px;
+}
+
+.container-name img {
+    border-radius: 50%;
+}
+
+.container-main {
+    background-color: #e2e8f0;
+}
+
+.container-search {
+    padding: 1.5vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+
+}
+.container-search input {
+    background-color: #e2e8f0;
+    border-radius: 1vh;
+}
+
+.container-greet {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 2vh 5vh;
 }
