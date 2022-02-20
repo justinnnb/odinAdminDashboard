@@ -12,6 +12,7 @@
 
 .logo {
     margin: 24px;
+    font-size: 1.3rem;
 }
 
 .menu {
@@ -25,6 +26,7 @@
 .menu ul, .menu li {
     list-style: none;
     margin: 24px;
+    font-size: 1.2rem;
 }
 
 .container-main {
@@ -39,41 +41,64 @@
     color: #646464;
 }
 
+.container-search h4 {
+    align-self: center;
+    justify-self: ;
+}
+
 .container-search {
+    padding-top: 16px;
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr 38px 1fr;
     height: auto;
+}
+
+#icon-search{
+    justify-self: end;
+    align-self: center;
+    padding: 4px;
+}
+
+#icon-notification {
+    padding: 0 14px;
+    justify-self: end;
+    align-self: center;
 }
 
 .container-search input {
     background-color: #e2e8f0;
     border-radius: 2rem;
+    height: 24px;
 }
 
 .container-greet {
+    padding: 8px 14px;
     display: flex;
     align-items: center;
-    height: 40px;
 }   
 
 .container-greet img {
     border-radius: 50%;
 }
 
+.container-search h4, .container-greet h4 {
+    font-size: 1.3rem;
+}
+
 /* Projects */
 
 .container-projects {
+    padding-top: 10px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 24px;
+    gap: 14px 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: .05fr 1fr 1fr 1fr;
     grid-area: 1 / 1 / 3 / 2;
     overflow-y: auto;
-    gap: 14px;
     min-width: 592.15px;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-bottom: 14px;
-    margin-top: 24px;
 
 }
 
@@ -81,11 +106,14 @@
     height: 100%;
     width: 100%;
     border-radius: 18px;
+    border-top-left-radius: 4px;
     background-color: white;
+    border-left: 12px solid orange;
 }
 
 .container-projects h2 {
     grid-area: 1 / 1 / 2 / 3;
+    padding-top: 14px;
 }
 
 .container-projects h3 {
@@ -99,7 +127,7 @@
 /* Announcements */
 
 .container-announcements {
-    display: grid;
+    padding-top: 24px;
     height: 300px;
     min-width: 195.23px;
     width: 90%;
@@ -111,13 +139,12 @@
 }
 
 .container-announcements h2 {
-    height: 30.35px;
-    margin-top: 24px;
+    padding-bottom: 14px;
 }
 .container-announcements div {
     background-color: white;
-    padding: 16px;
     position: relative;
+    padding: 16px;
 }
 
 .container-announcements div::after {
@@ -142,13 +169,18 @@
 .container-trending {
     grid-area: 2 / 2 / 3 / 3;
     width: 90%;
+    align-self: flex-end;
+    margin-bottom: 14px;
 }
 
+.container-trending h2 {
+    height: 30.35px;
+    padding-bottom: 14px;
+}
 .trending {
     background: white;
     border-radius: 18px;
     padding-left: 28px;
-    height: 200px;
     min-width: 195.23px;
     width: 100%;
 }
